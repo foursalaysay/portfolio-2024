@@ -22,7 +22,7 @@ export default function HomePage() {
     },
   };
   return (
-    <motion.div variants={variants} className="w-full h-screen">
+    <motion.div variants={variants} className="w-screen h-screen flex flex-col justify-start items-center">
       <Navbar />
 
       <Image

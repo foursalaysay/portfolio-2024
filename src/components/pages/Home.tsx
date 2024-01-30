@@ -1,6 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Image from "next/image"
+
+import logo from '/kyle.svg'
 
 export default function HomePage(){
 
@@ -17,6 +20,12 @@ export default function HomePage(){
     }
     return(
         <motion.div variants={variants}>
+            <Image
+            src={logo}
+            height={500}
+            width={500}
+            alt="image"
+             />
             <h1>John Kyle Salaysay</h1>
         </motion.div>
     )
